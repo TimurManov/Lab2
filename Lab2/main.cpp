@@ -23,7 +23,7 @@ void createFile(const string& filename) {
 }
 
 int main() {
-    srand(time(0)); // инийиализация генератора случайных чисел
+    srand(time(0)); // Инициализация генератора случайных чисел
 
     createFile("file1.txt");
     createFile("file2.txt");
