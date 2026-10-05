@@ -5,11 +5,11 @@
 
 using namespace std;
 
-// Функция создаёт файл с 10 случайными числами от 1 до 10
+// Р¤СѓРЅРєС†РёСЏ СЃРѕР·РґР°РµС‚ С„Р°Р№Р» СЃ 10 СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё РѕС‚ 1 РґРѕ 10
 void createFile(const string& filename) {
     ofstream file(filename);
     if (!file.is_open()) {
-        cerr << "Не удалось открыть файл " << filename << endl;
+        cerr << "РќРµ СѓРґР°Р»РѕСЃСЊ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» " << filename << endl;
         return;
     }
     for (int i = 0; i < 10; ++i) {
@@ -19,11 +19,11 @@ void createFile(const string& filename) {
     }
     file << endl;
     file.close();
-    cout << "Создан файл: " << filename << endl;
+    cout << "РЎРѕР·РґР°РЅ С„Р°Р№Р»: " << filename << endl;
 }
 
 int main() {
-    srand(time(0)); // инициализация генератора случайных чисел
+    srand(time(0)); // РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РіРµРЅРµСЂР°С‚РѕСЂР° СЃР»СѓС‡Р°Р№РЅС‹С… С‡РёСЃРµР» 
 
     createFile("file1.txt");
     createFile("file2.txt");
